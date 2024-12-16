@@ -1,4 +1,4 @@
-# Energy Management System
+# Energy Management System - Core Version
 
 ## Overview
 The Energy Management System (EMS) is a comprehensive platform designed to facilitate efficient management of users and their associated smart energy metering devices. The system incorporates a **frontend application** and two backend **microservices**: 
