@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DS2023_30243_Oprean_Dan_Assig1_Backend.iml" filepath="$PROJECT_DIR$/.idea/DS2023_30243_Oprean_Dan_Assig1_Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UsersMicroservice/ds-2020.iml" filepath="$PROJECT_DIR$/UsersMicroservice/ds-2020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DevicesMicroservice/ds-2020 (1).iml" filepath="$PROJECT_DIR$/DevicesMicroservice/ds-2020 (1).iml" />
+    </modules>
+  </component>
+</project>

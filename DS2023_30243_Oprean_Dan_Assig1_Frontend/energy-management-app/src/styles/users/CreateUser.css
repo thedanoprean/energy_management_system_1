@@ -1,0 +1,60 @@
+/* CreateUser.css */
+.create-user-container.user-specific {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.create-user-form.user-specific-form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1f1f1f; /* Gri deschis pentru fundalul formularului */
+  border-radius: 8px; /* Margini rotunjite */
+  border: 5px solid #000; /* Grosime și culoare pentru marginea neagră */
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); /* Umbră sub formular */
+}
+
+.form-group.user-specific-group {
+  margin-bottom: 20px;
+}
+
+.form-group.user-specific-group label {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.form-group.user-specific-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.create-button.user-specific-button {
+  background-color: #3498db; /* Albastru deschis pentru buton */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px; /* Margini rotunjite pentru buton */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-button.user-specific-button:hover {
+  background-color: #2980b9; /* Albastru închis la hover */
+  transform: scale(1.05); /* Efect de mărire la hover */
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #ff0000;
+  font-weight: bold;
+}

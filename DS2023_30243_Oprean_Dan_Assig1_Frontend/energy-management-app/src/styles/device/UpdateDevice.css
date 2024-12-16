@@ -1,0 +1,124 @@
+/* UpdateDevice.css */
+.update-device-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.devices-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #1f1f1f; /* Gri deschis pentru fundalul listei */
+  border-radius: 8px; /* Margini rotunjite */
+  border: 5px solid #000; /* Grosime și culoare pentru marginea neagră */
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #303030;
+  color: #fff; /* Text negru */
+}
+
+th {
+  background-color: #333; /* Fundal negru pentru antetele coloanelor */
+}
+
+.device-item {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.update-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.update-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+.update-info-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.update-info-button:hover {
+  background-color: #218838;
+}
+
+.back-button {
+  background-color: #ff5555;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #d9534f;
+}
+
+.success-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  animation: fadeOut 1s forwards 2s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

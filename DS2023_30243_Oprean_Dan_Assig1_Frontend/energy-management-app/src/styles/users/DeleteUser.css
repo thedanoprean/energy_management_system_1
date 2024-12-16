@@ -1,0 +1,47 @@
+/* DeleteUser.css */
+.delete-user-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.users-list {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow-x: auto;
+  background-color: #1f1f1f; /* Gri deschis pentru fundalul listei */
+  border-radius: 8px; /* Margini rotunjite */
+  border: 5px solid #000; /* Grosime și culoare pentru marginea neagră */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #303030;
+  color: #fff;
+}
+
+th {
+  background-color: #333;
+}
+
+.delete-button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px; /* Adăugăm margini rotunjite pentru buton */
+}
+
+.delete-button:hover {
+  background-color: #ff3336;
+}

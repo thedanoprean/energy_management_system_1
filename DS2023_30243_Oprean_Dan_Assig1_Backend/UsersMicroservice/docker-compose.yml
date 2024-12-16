@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  database-user:  # Set a custom container name for the database
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: daniel998
+      POSTGRES_DB: users-management
+    ports:
+      - "5433:5433"
+    volumes:
+      - postgres-data-user:/var/lib/postgresql/data
+
+  application-user:  # Set a custom container name for the service
+    build: .
+    ports:
+      - "8081:8081"
+    depends_on:
+      - database-user
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database-user:5432/users-management
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: daniel998
+
+volumes:
+  postgres-data-user:

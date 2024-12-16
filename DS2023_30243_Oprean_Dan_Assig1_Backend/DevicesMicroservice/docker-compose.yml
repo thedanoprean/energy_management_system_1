@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  database-device:  # Set a custom container name for the database
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: daniel998
+      POSTGRES_DB: devices-management
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data-user:/var/lib/postgresql/data
+
+  application-device:  # Set a custom container name for the service
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database-device
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database-device:5432/devices-management
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: daniel998
+
+volumes:
+  postgres-data-user:
